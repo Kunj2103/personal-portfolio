@@ -49,15 +49,17 @@ const About = () => {
           <div className="flex gap-1.5 text-xs items-center font-mono font-medium text-orange-500">
             about_me.md
           </div>
-          <Typewriter
-            words={[
-              "As a full-stack developer at HexaBrain Technologies. My role encompasses innovating software solutions that align with business needs, a testament to my logical approach and organizational skills honed during my academic and professional journey.",
-            ]}
-            cursor
-            typeSpeed={100}
-            delaySpeed={1000}
-            cursorColor="rgb(249 115 22/1)"
-          />
+          <div className="text-gray-500">
+            <Typewriter
+              words={[
+                "As a full-stack developer at HexaBrain Technologies. My role encompasses innovating software solutions that align with business needs, a testament to my logical approach and organizational skills honed during my academic and professional journey.",
+              ]}
+              cursor
+              typeSpeed={100}
+              delaySpeed={1000}
+              cursorColor="rgb(249 115 22/1)"
+            />
+          </div>
         </div>
       </section>
     </div>

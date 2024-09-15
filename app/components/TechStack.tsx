@@ -63,7 +63,7 @@ const iconComponents = {
 const TechStack = () => {
   return (
     <div className="max-w-xl mx-auto mt-12">
-      <h2 className="font-medium text-slate-400 text-xl">Tech Stack</h2>
+      <h2 className="mb-2 font-medium text-slate-400 text-xl">Tech Stack</h2>
       <div>
         <div className="bg-white max-w-xl w-full rounded-xl shadow-sm border p-2">
           <div className="logos">
@@ -72,7 +72,7 @@ const TechStack = () => {
                 const IconComponent: IconType = iconComponents[tech.src];
                 return (
                   <div key={tech.src} className="h-10 w-10 mx-5">
-                    <IconComponent />
+                    <IconComponent className="text-gray-500" />
                   </div>
                 );
               })}
@@ -82,7 +82,7 @@ const TechStack = () => {
                 const IconComponent: IconType = iconComponents[tech.src];
                 return (
                   <div key={tech.src} className="h-10 w-10 mx-5">
-                    <IconComponent />
+                    <IconComponent className="text-gray-500" />
                   </div>
                 );
               })}

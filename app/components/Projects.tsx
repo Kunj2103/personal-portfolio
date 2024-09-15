@@ -12,7 +12,9 @@ const Projects = () => {
   ];
   return (
     <div className="max-w-xl mx-auto mt-12">
-      <h2 className="mb-2">Personal Projects</h2>
+      <h2 className="mb-2 font-medium text-slate-400 text-xl">
+        Personal Projects
+      </h2>
       {projects.map((project) => (
         <div key={project.title}>
           <div className="aspect-video">
