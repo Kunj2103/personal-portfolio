@@ -11,12 +11,12 @@ const About = () => {
       <header className="text-xl max-w-xl mx-auto">
         <span className="text-orange-500">⌘</span>
         <h1 className="font-semibold">Kunj Jansari</h1>
-        <h4 className="text-slate-400 flex items-center gap-1">
-          Frontend at
+        <h4 className="text-slate-400 d-md-flex items-center gap-1">
+          Full-stack Developer at
           <Link
             target="_blank"
             href="https://hexabrain.com"
-            className="hover:bg-emerald-100 rounded-full px-2 pr-3 py-1 border border-transparent hover:border-emerald-400 transition-all cursor-alias text-emerald-500 inline-flex items-center gap-1.5"
+            className="hover:bg-emerald-100 rounded-full md:px-2 pr-3 py-1 border border-transparent hover:border-emerald-400 transition-all cursor-alias text-emerald-500 inline-flex items-center gap-1.5"
           >
             <Image
               alt="hexabrain logo"

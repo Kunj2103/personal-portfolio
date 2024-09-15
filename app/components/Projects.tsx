@@ -15,12 +15,15 @@ const Projects = () => {
       <h2 className="mb-2">Personal Projects</h2>
       {projects.map((project) => (
         <div key={project.title}>
-          <Image
-            src={project.src}
-            alt={project.title}
-            width={1280}
-            height={800}
-          />
+          <div className="aspect-video">
+            <Image
+              src={project.src}
+              alt={project.title}
+              width={1280}
+              height={800}
+              className="aspect-video rounded-xl"
+            />
+          </div>
           <p className="mt-2 text-right text-blue-500 text-sm">
             <Link target="_blank" className="underline p-2" href={project.link}>
               {project.title}
