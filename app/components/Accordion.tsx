@@ -21,10 +21,8 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         <button
           onClick={onClick}
           type="button"
-          className={`flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 ${
-            isOpen
-              ? "bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"
-              : "bg-white"
+          className={`flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200  hover:bg-blue-100  ${
+            isOpen ? "bg-blue-100 text-blue-600" : "bg-white"
           }`}
           aria-expanded={isOpen}
         >
@@ -49,8 +47,8 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         </button>
       </h2>
       {isOpen && (
-        <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-          <p className="text-gray-500 dark:text-gray-400">{content}</p>
+        <div className="p-5 border border-b-0 border-gray-200">
+          <p className="text-gray-500">{content}</p>
         </div>
       )}
     </div>
@@ -81,10 +79,7 @@ const Accordion: React.FC<AccordionProps> = ({ initialOpenIndex = null }) => {
   ];
 
   return (
-    <div
-      id="accordion-color"
-      className="border border-gray-200 dark:border-gray-700"
-    >
+    <div id="accordion-color" className="border border-gray-200">
       {accordionData.map((item, index) => (
         <AccordionItem
           key={index}
