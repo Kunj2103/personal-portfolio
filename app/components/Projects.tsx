@@ -2,12 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import personalProjectImage from "../../public/images/personal-project.png";
+import fourthWallImage from "../../public/images/4th-wall.png";
 const Projects = () => {
   const projects = [
     {
       title: "React Resume Template",
       src: personalProjectImage,
       link: "https://portfolio-kj2103.web.app",
+    },
+    {
+      title: "The 4th Wall",
+      src: fourthWallImage,
+      link: "https://the4th-wall.vercel.app/",
     },
   ];
   return (
@@ -16,7 +22,7 @@ const Projects = () => {
         Personal Projects
       </h2>
       {projects.map((project) => (
-        <div key={project.title}>
+        <div key={project.title} className="my-4">
           <div className="aspect-video">
             <Image
               src={project.src}
