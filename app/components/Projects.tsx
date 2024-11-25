@@ -13,7 +13,7 @@ const Projects = () => {
     {
       title: "The 4th Wall",
       src: fourthWallImage,
-      link: "https://the4th-wall.vercel.app/",
+      link: "https://the4thwall.in",
     },
   ];
   return (
